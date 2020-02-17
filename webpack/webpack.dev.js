@@ -12,7 +12,10 @@ const rules = [
   },
   {
     test: /\.(png|jpe?g|gif)$/i,
-    use: "file-loader"
+    loader: "file-loader",
+    options: {
+      name: "[name].[ext]"
+    }
   },
   {
     test: /\.css$/,
