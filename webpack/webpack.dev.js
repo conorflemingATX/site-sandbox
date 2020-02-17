@@ -11,10 +11,27 @@ const rules = [
     use: "pug-loader"
   },
   {
+    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+    use: [
+      {
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]"
+        }
+      }
+    ]
+  },
+  {
     test: /\.(png|jpe?g|gif)$/i,
-    loader: "file-loader",
+    loader: "url-loader",
     options: {
-      name: "[name].[ext]"
+      limit: 8192,
+      fallback: {
+        loader: "file-loader",
+        options: {
+          name: "[name].[ext]"
+        }
+      }
     }
   },
   {
