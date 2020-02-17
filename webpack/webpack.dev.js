@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const pages = require("./pageConfig");
+
 const rules = [
   {
     test: /\.pug$/,
@@ -24,19 +26,9 @@ const rules = [
 ];
 
 const plugins = [
-  new HtmlWebpackPlugin({
-    inject: false,
-    template: "src/view/index.pug",
-    filename: "index.html",
-    title: "My Title",
-    templateParameters: (compilation, assets, options) => ({
-      config: compilation.options,
-      assets,
-      options
-    })
-  }),
   new CleanWebpackPlugin(),
-  new MiniCssExtractPlugin()
+  new MiniCssExtractPlugin(),
+  ...pages.map(page => new HtmlWebpackPlugin(page))
 ];
 
 module.exports = {
@@ -51,7 +43,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "..", "dist"),
     host: "0.0.0.0",
-    allowedHosts: ["wsl"],
+    disableHostCheck: true,
     hot: true
   },
   plugins,

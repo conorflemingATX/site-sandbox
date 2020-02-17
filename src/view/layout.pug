@@ -9,11 +9,6 @@ html(lang="en")
       link(rel="stylesheet", href=style)
     title= options.title
   body
-    include includes/header
     block main
-    include includes/footer
     if isDev
       script(src=assets.js[0])
-
-//- If I'm going to make static sites with this, and not include js, then I will have to have a separate configuration between dev and prod.
-//- Right now I am relying on js to power hot module reloading, I think that the easiest thing to do is to have a statment which loads the "main" js chunk conditionally based on webpack.config.mode
