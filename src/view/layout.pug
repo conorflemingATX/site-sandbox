@@ -5,33 +5,10 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css")
     each style in assets.css
       link(rel="stylesheet", href=style)
     title= options.title
   body
-    nav.navbar
-      a.navbar__logo(href="#")
-      ul.navbar__menu
-        li.navbar__menu-item
-          a.navbar__menu-item-link(href="#") Services
-        li.navbar__menu-item
-          a.navbar__menu-item-link(href="#") Industries
-        li.navbar__menu-item
-          a.navbar__menu-item-link(href="#") Insights
-        li.navbar__menu-item
-          a.navbar__menu-item-link(href="#") About
-        li.navbar__menu-item
-          a.navbar__menu-item-link(href="#") Contact
-      ul.navbar__social
-        li.navbar__social-item
-          a.navbar__social-link
-            i.fab.fa-facebook
-        li.navbar__social-item
-          a.navbar__social-link
-            i.fab.fa-twitter
-        li.navbar__social-item
-          a.navbar__social-link
-            i.fab.fa-linkedin
+    h1 hi there
     if isDev
       script(src=assets.js[0])
