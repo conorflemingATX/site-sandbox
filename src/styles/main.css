@@ -36,3 +36,34 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
 }
+
+.main {
+  min-height: 90vh;
+  background-color: grey;
+}
+
+.footer {
+}
+
+.footer__main-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.footer__info {
+}
+
+.footer__logo-link {
+}
+
+.footer__logo-link img {
+  width: 25rem;
+}
+
+.footer__copyright-statement {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
