@@ -23,16 +23,21 @@ const rules = [
   },
   {
     test: /\.(png|jpe?g|gif)$/i,
-    loader: "url-loader",
+    loader: "file-loader",
     options: {
-      limit: 8192,
-      fallback: {
+      name: "[name].[ext]"
+    }
+  },
+  {
+    test: /\.(mov|mp4)$/,
+    use: [
+      {
         loader: "file-loader",
         options: {
           name: "[name].[ext]"
         }
       }
-    }
+    ]
   },
   {
     test: /\.css$/,

@@ -1,0 +1,40 @@
+body {
+  background: green;
+}
+
+.border {
+  position: relative;
+  border-radius: 4px;
+  margin: 150px 150px;
+  width: min-content;
+  height: min-content;
+  border-image: url("/hero-macbook-top.png") 55 45 55 30 / 65px 45px / 15px 15px
+    stretch;
+}
+
+.border::before {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #000;
+  z-index: -1;
+}
+
+.border::after {
+  content: "";
+  background: url("/hero-macbook-bottom.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: calc(0% - 11px - 10.5%);
+  height: 200px;
+  width: calc(100% + 10.5px + 22.5%);
+}
+
+#player {
+  width: 40vw;
+  height: 50vh;
+}
