@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+
+:root {
+  --pixie-powder: hsl(260, 96%, 29%);
+  --middle-red-purple: hsl(261, 95%, 17%);
+  --pale-cyan: hsl(199, 99%, 74%);
+  --rose-pink: hsl(320, 99%, 69%);
+  --royal-blue: hsl(235, 77%, 62%);
+
+  --dark-grey-text: hsl(0, 0, 21%);
+  --light-grey-text: hsl(0, 0%, 48%);
+  --white-text: hsl(0, 0%, 96%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
