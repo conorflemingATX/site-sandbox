@@ -6,6 +6,7 @@ import "./styles/top-nav.css";
 
 // images
 import "./images/logo-rounded-1536x361.png";
+import "./images/foot-logo-white-1024x241.png";
 import "./images/final-rpa.mp4";
 import "./images/hero-macbook-bottom.png";
 import "./images/hero-macbook-top.png";
@@ -14,5 +15,3 @@ import "./images/hero-macbook-top.png";
 import "./images/AI.jpg";
 import "./images/BL.jpg";
 import "./images/BL11.jpg";
-
-console.log("someting");
