@@ -3,6 +3,7 @@
 // styles
 import "./styles/main.css";
 import "./styles/top-nav.css";
+import "./styles/footer.css";
 
 // images
 import "./images/logo-rounded-1536x361.png";
