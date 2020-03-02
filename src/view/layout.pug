@@ -1,5 +1,3 @@
-- const isDev = config.mode === "development"
-
 <!DOCTYPE html>
 html(lang="en")
   head
@@ -8,7 +6,8 @@ html(lang="en")
     each style in assets.css
       link(rel="stylesheet", href=style)
     title= options.title
-  body
-    h1 hi there
-    if isDev
-      script(src=assets.js[0])
+  <body>
+    include includes/top-nav
+    <p>Next step is to make the hamburger component and to make it function when it moved outside of the header.</p>
+    script(src=assets.js[0])
+  </body>
