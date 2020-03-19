@@ -7,13 +7,31 @@ html(lang="en")
     each style in assets.css
       link(rel="stylesheet", href=style)
     title= options.title
-  <body>
-    include includes/top-nav
-    <main class="main">
-      <section class="hero">
-        
-      </section>
-    </main>
-    include includes/footer
-    script(src=assets.js[0])
-  </body>
+  body
+    .gallery__title-box
+      i.gallery__item-icon-span--top.fas.fa-satellite
+      h3.gallery__item-title--top Caption Gallery Item 1
+  .gallery__item--bottom
+    i.gallery__item-icon-span--bottom.fas.fa-satellite
+    h4.gallery__item-title--bottom Caption Gallery Item 1
+    p.gallery__item-text I am some text to go at the bottom of the gallery item thing.
+li.gallery__item-box
+  figure.gallery__item--top
+    img.gallery__item-image(src="BL.jpg")
+    .gallery__title-box
+      i.gallery__item-icon-span--top.fas.fa-meteor
+      h3.gallery__item-title--top Caption Gallery Item 2
+  .gallery__item--bottom
+    i.gallery__item-icon-span--bottom.fas.fa-meteor
+    h4.gallery__item-title--bottom Caption Gallery Item 2
+    p.gallery__item-text I am some text to go at the bottom of the gallery item thing.
+li.gallery__item-box
+  figure.gallery__item--top
+    img.gallery__item-image(src="BL11.jpg")
+    .gallery__title-box
+      i.gallery__item-icon-span--top.fas.fa-rocket
+      h3.gallery__item-title--top Caption Gallery Item 2
+  .gallery__item--bottom
+    i.gallery__item-icon-span--bottom.fas.fa-rocket
+    h4.gallery__item-title--bottom Caption Gallery Item 2
+    p.gallery__item-text I am some text to go at the bottom of the gallery item thing.
