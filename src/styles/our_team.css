@@ -1,0 +1,50 @@
+.our-team h2 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 34px;
+}
+
+.our-team__team-member {
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 100%) 20%,
+    hsl(0, 0%, 90%, 0.8) 20%,
+    hsl(0, 0%, 90%, 0.8) 65%,
+    hsl(0, 0%, 87%)
+  );
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 4px hsl(0, 0%, 0%, 0.2);
+  border: 1px solid hsl(0, 0%, 80%);
+}
+
+.our-team__portrait {
+  width: 200px;
+  margin-top: -20px;
+}
+
+.our-team__portrait-frame {
+  width: 200px;
+  height: 200px;
+  border-radius: 400px;
+  overflow: hidden;
+  margin: 0 3%;
+}
+
+.our-team__bio-box {
+  width: 60%;
+}
+
+.our-team__bio-name {
+  margin-bottom: 5%;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.our-team__bio-text {
+  font-size: 16px;
+}
